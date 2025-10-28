@@ -1,0 +1,215 @@
+---
+// Componente About para información personal
+---
+
+<section id="sobre-mi" class="about">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Know my story and passion for development</p>
+    </div>
+    
+    <div class="about-content">
+      <div class="about-text">
+        <div class="about-card">
+          <h3>My Story</h3>
+          <p>
+            Soy un desarrollador apasionado con más de 1 año de experiencia creando 
+            innovative digital solutions. My journey began with curiosity about how web 
+            applications work, and since then I have not stopped learning and growing in 
+            this fascinating world of development.
+          </p>
+        </div>
+        
+        <div class="about-card">
+          <h3>My Focus</h3>
+          <p>
+            I believe in development centered on the user, where each line of code 
+            has a clear purpose. I specialize in creating intuitive interfaces and 
+            exceptional user experiences, combining best practices with modern design 
+            and functionality.
+          </p>
+        </div>
+        
+        <div class="about-card">
+          <h3>My Passion</h3>
+          <p>
+            What motivates me most is solving complex problems and seeing how my 
+            solutions positively impact people's lives. Each project is an opportunity to learn something new and overcome technical challenges.
+          </p>
+        </div>
+      </div>
+      
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-number">1+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Technologies Dominated</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Satisfied Clients</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 1rem 0;
+    position: relative;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    border-radius: 2px;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: #718096;
+    margin: 0;
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0 0 1rem 0;
+  }
+
+  .about-card p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    color: #718096;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .about-stats {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .about-card {
+      padding: 1.5rem;
+    }
+
+    .stat-card {
+      padding: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-stats {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
