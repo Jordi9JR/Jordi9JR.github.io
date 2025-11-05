@@ -122,3 +122,6 @@ npm run build
 
 This project is private and proprietary.
 
+## Figma
+https://www.figma.com/design/d9x4TZuILV9WTAJQBfKw8T/Untitled?node-id=0-1&t=x8EVJx9S9PZcBzu3-1
+
