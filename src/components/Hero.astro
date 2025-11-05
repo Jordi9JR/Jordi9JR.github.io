@@ -1,9 +1,7 @@
 ---
-// Componente Hero para la sección principal del portafolio
 ---
 
 <section class="hero">
-  <!-- Diagonal Split Background -->
   <div class="diagonal-split">
     <div class="left-section">
       <div class="content-wrapper">
@@ -45,7 +43,6 @@
     
     <div class="right-section">
        <div class="visual-elements">
-        <!-- Animated Tech Stack -->
         <div class="tech-stack">
           <div class="tech-item tech-1">
             <div class="tech-icon">⚛️</div>
@@ -73,7 +70,6 @@
           </div>
         </div>
 
-        <!-- Floating Code Blocks -->
         <div class="code-block floating-1">
           <div class="code-header">
             <div class="code-dots">
@@ -109,7 +105,6 @@
           </div>
         </div>
 
-        <!-- Interactive Profile Card -->
         <div class="profile-card">
           <div class="profile-image">
             <div class="image-container">
@@ -132,7 +127,6 @@
           </div>
         </div>
 
-        <!-- Animated Background Elements -->
         <div class="bg-shapes">
           <div class="shape shape-1"></div>
           <div class="shape shape-2"></div>
@@ -143,7 +137,6 @@
     </div>
   </div>
   
-  <!-- Scroll Indicator -->
   <div class="scroll-indicator">
     <div class="scroll-arrow">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,14 +153,12 @@
     overflow: hidden;
   }
 
-  /* Diagonal Split Layout */
   .diagonal-split {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
   }
 
-  /* Left Section - Dark Background with Diagonal Cut */
   .left-section {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     position: absolute;
@@ -194,7 +185,6 @@
     clip-path: polygon(0 0, 100% 0, 0 100%);
   }
 
-  /* Right Section - Light Background with Diagonal Cut */
   .right-section {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e0 100%);
     position: absolute;
@@ -221,7 +211,6 @@
     clip-path: polygon(100% 0, 100% 100%, 0 100%);
   }
 
-  /* Content Wrapper */
   .content-wrapper {
     max-width: 500px;
     width: 100%;
@@ -229,7 +218,6 @@
     position: relative;
   }
 
-  /* Hero Text Styles */
   .hero-text {
     color: white;
   }
@@ -306,7 +294,6 @@
     opacity: 0.8;
   }
 
-  /* Buttons */
   .hero-buttons {
     display: flex;
     gap: 1rem;
@@ -366,7 +353,6 @@
     transform: translateY(-3px);
   }
 
-  /* Visual Elements */
   .visual-elements {
     position: relative;
     width: 100%;
@@ -374,7 +360,6 @@
     max-width: 600px;
   }
 
-  /* Code Blocks */
   .code-block {
     position: absolute;
     background: rgba(255, 255, 255, 0.95);
@@ -464,7 +449,6 @@
   .string { color: #dc2626; }
   .selector { color: #7c3aed; font-weight: 600; }
 
-  /* Profile Card */
   .profile-card {
     position: absolute;
     top: 45%;
@@ -553,7 +537,6 @@
     animation: pulse 2s infinite;
   }
 
-  /* Tech Stack */
   .tech-stack {
     position: absolute;
     top: 5%;
@@ -606,7 +589,6 @@
     50% { transform: translateY(-10px) rotate(2deg); }
   }
 
-  /* Background Shapes */
   .bg-shapes {
     position: absolute;
     top: 0;
@@ -663,7 +645,6 @@
     75% { transform: translateY(-30px) rotate(270deg) scale(1.05); }
   }
 
-  /* Scroll Indicator */
   .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -680,7 +661,6 @@
     60% { transform: translateX(-50%) translateY(-5px); }
   }
 
-  /* Responsive Design */
   @media (max-width: 1024px) {
     .left-section {
       width: 100%;
@@ -735,8 +715,8 @@
 
     .profile-card {
       position: relative;
-      top: auto;
-      left: auto;
+      top: 8rem;
+      left: 8rem;
       transform: none;
       margin: 2rem auto;
     }
