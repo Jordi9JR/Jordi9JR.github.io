@@ -74,9 +74,6 @@ The visual design of this portfolio prioritizes modernity, professionalism, and 
 
 ## Design Resources
 
-### Figma Project
-[Add your Figma project link here]
-
 ---
 
 ## Technologies Used
